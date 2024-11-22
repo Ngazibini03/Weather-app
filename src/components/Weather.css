@@ -1,0 +1,176 @@
+/* General Weather Container */
+.weather{
+    place-self: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #00aaff, #ff8000); /* Sky and sunset colors */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    transition: background-image 0.3s ease;
+}
+
+/* Search Bar */
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+/* Search Bar Input Field */
+.search-bar input{
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 25px;
+    color: #333;
+    background: #ebfffc;
+    font-size: 18px;
+    width: 250px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-bar input:focus{
+    background-color: #ffebcc; /* Light yellow for focus */
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5); /* Orange glow effect */
+}
+
+/* Search Icon */
+.search-bar img{
+    width: 50px;
+    padding: 15px;
+    border-radius: 50%;
+    background: #ebfffc;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.search-bar img:hover{
+    transform: scale(1.1); /* Slight scale-up effect on hover */
+}
+
+/* Weather Icon */
+.weather-icon{
+    width: 150px;
+    margin: 30px 0;
+    transition: transform 0.3s ease;
+}
+
+.weather-icon:hover{
+    transform: rotate(10deg); /* Gentle rotation effect on hover */
+}
+
+/* Temperature Display */
+.temperature{
+    color: #ffffff;
+    font-size: 80px;
+    line-height: 1;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+    transition: color 0.3s ease;
+}
+
+/* Location Display */
+.location{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Weather Data */
+.weather-data{
+    width: 100%;
+    margin-top: 40px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+/* Weather Data Columns */
+.weather-data .col{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 22px;
+    transition: color 0.3s ease;
+}
+
+/* Data Labels */
+.weather-data .col span{
+    display: block;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7); /* Light gray for labels */
+}
+
+/* Icons in Weather Data */
+.weather-data .col img{
+    width: 26px;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for weather data icons */
+.weather-data .col img:hover{
+    transform: scale(1.2); /* Scale-up effect for better visual interaction */
+}
+
+/* No Data Message */
+.no-data-message {
+    font-size: 16px;
+    color: gray;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Hover effect for weather container */
+.weather:hover {
+    background-image: linear-gradient(45deg, #76c7c0, #694646); /* Lighter gradient for hover, gives a "sunny" feel */
+}
+
+/* Adding specific weather color themes for different conditions */
+.sunny{
+    background-image: linear-gradient(45deg, #ffbf00, #ffdb58); /* Sunny yellow-orange gradient */
+}
+
+.cloudy{
+    background-image: linear-gradient(45deg, #b0c4de, #778899); /* Cloudy cool tones */
+}
+
+.rainy{
+    background-image: linear-gradient(45deg, #2a3d66, #4f92a8); /* Rainy blue-greenish tones */
+}
+
+.stormy{
+    background-image: linear-gradient(45deg, #2f2f2f, #555555); /* Dark gray for stormy conditions */
+}
+
+.snowy{
+    background-image: linear-gradient(45deg, #dcdcdc, #a9c9ff); /* Light gray and cool tones for snow */
+}
+
+/* Add additional hover effects for different weather types */
+.weather.sunny:hover {
+    background-image: linear-gradient(45deg, #ffdb58, #ff8000); /* A warm hover effect for sunny */
+}
+
+.weather.cloudy:hover {
+    background-image: linear-gradient(45deg, #c0d0e0, #5f7f99); /* Subtle shift for cloudy */
+}
+
+.weather.rainy:hover {
+    background-image: linear-gradient(45deg, #4f92a8, #3e687a); /* Slight darker rainy hover */
+}
+
+.weather.stormy:hover {
+    background-image: linear-gradient(45deg, #444444, #2f2f2f); /* Darker stormy hover */
+}
+
+.weather.snowy:hover {
+    background-image: linear-gradient(45deg, #a9c9ff, #c3e7ff); /* Light blue hover for snowy */
+}
+
