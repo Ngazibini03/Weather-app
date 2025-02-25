@@ -3,7 +3,7 @@
     place-self: center;
     padding: 40px;
     border-radius: 10px;
-    background-image: linear-gradient(45deg, #00aaff, #ff8000); /* Sky and sunset colors */
+    background-image: linear-gradient(45deg, #00aaff, white);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,7 +129,7 @@
 
 /* Hover effect for weather container */
 .weather:hover {
-    background-image: linear-gradient(45deg, #76c7c0, #694646); /* Lighter gradient for hover, gives a "sunny" feel */
+    background-image: linear-gradient(45deg, #76c7c0, skyblue); /* Lighter gradient for hover, gives a "sunny" feel */
 }
 
 /* Adding specific weather color themes for different conditions */
